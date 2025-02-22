@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiverr Gig Video</title>
+    <link type="text/css" rel="stylesheet" href="./theme.css"/>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: var(--md-sys-color-background);
+            overflow: hidden;
+        }
+
+        main {
+            width: 1280px;
+            height: 720px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            flex-direction: column;
+            position: relative;
+            background: var(--md-sys-color-on-background);
+            animation: backgroundAnimation 2s linear infinite; /* Animation applied */
+        }
+
+        @keyframes backgroundAnimation {
+            0% {
+                background: var(--md-sys-color-on-surface) /* Start color */
+            }
+            50% {
+                background: var(--md-sys-color-on-background); /* Loop back to start color */
+            }
+            100% {
+                background: var(--md-sys-color-on-surface) /* Start color */
+            }
+        }
+
+
+        main > h1 {
+            margin: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 16px 0;
+            background: var(--md-sys-color-primary-container);
+            color: var(--md-sys-color-on-primary-container);
+        }
+
+        main > article {
+            flex-grow: 1;
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+        }
+
+        main > article > div {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 4rem 0 12rem;
+            flex-grow: 1;
+        }
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        main > article img {
+            height: 25rem;
+            aspect-ratio: 1;
+            object-fit: contain;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .headline {
+            opacity: 0;
+            height: 7rem;
+            display: flex;
+            align-items: center;
+            animation: fadeIn 2s ease-in-out forwards;
+        }
+
+        .content li {
+            animation: fadeLeft 2s ease-in-out forwards;
+        }
+
+        @keyframes fadeLeft {
+            0% {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+<main class="video-container">
+    <h1 class="md-typescale-display-large">Develop custom website</h1>
+    <article>
+        <div>
+            <section class="content"><h2 class="headline md-typescale-display-medium">
+                Professional Website Development
+            </h2>
+                <ul>
+                    <li class="md-typescale-display-small">Item 1</li>
+                    <li class="md-typescale-display-small">Item 1</li>
+                    <li class="md-typescale-display-small">Item 1</li>
+                    <li class="md-typescale-display-small">Item 1</li>
+                </ul>
+            </section>
+            <aside>
+                <img src="/profile-pic.png" alt="My profile picture"/>
+            </aside>
+        </div>
+
+    </article>
+</main>
+<script>
+    // Grab elements from the DOM
+    const headlineElement = document.querySelector('.headline');
+    const listElement = document.querySelector('.content ul');
+    const titleElement = document.querySelector('h1');
+
+    // Get the gig type from URL params or fallback to 'website'
+    const params = new URLSearchParams(window.location.search);
+    const gigType = params.get('gig') || "website";
+
+    // Define gig-specific data with headlines and related list items
+    const gigData = {
+        website: {
+            title: 'Design and develop a custom website',
+            headlines: [
+                {
+                    title: "Professional Website Development",
+                    items: ["Material Design 3", "Tailored to your needs", "CSS3", "Open to change"]
+                },
+                {
+                    title: "Responsive & Fast",
+                    items: ["CSS Grid & Flexbox for Modern Layouts",
+                        "Mobile-first Responsive Design",
+                        "Optimized for Fast Loading",
+                        "Cross-browser Compatibility"
+                    ]
+                },
+                {
+                    title: "SEO Optimized",
+                    items: ["Semantic HTML", "Meta Tags & Keywords", "Accessible UX", "Fast Loading"]
+                },
+                {
+                    title: "Built with Modern Tech",
+                    items: [
+                        "Astro for Static Site Generation",
+                        "Gatsby for Fast Websites",
+                        "Tailwind CSS for Stunning Design",
+                        "TypeScript for Reliability"
+                    ]
+
+                }
+            ]
+        },
+        chatbot: {
+            title: 'Develop a custom ai chatbot',
+            headlines: [
+                {
+                    title: "Custom AI Chatbot Development",
+                    items: ["OpenAI Integration", "For your business needs", "Real-time Responses", "Multi-language Support"]
+                },
+                {
+                    title: "Conversational AI",
+                    items: ["Context-aware Agents", "Natural Language Processing", "Personalized Conversations", "Training AI Models"]
+                },
+                {
+                    title: "OpenAI & LLM Integrations",
+                    items: ["GPT Models", "Embeddings Support", "Serverless Deployments", "AI Fine-tuning"]
+                },
+                {
+                    title: "User-friendly & Scalable",
+                    items: ["Intuitive UI", "Scalable Backend", "Extensive Testing", "Reliable Hosting"]
+                }
+            ]
+        },
+        e2e: {
+            headlines: [
+                {
+                    title: "Automated Browser Testing",
+                    items: ["Cypress.io", "Puppeteer", "Cross-browser Tests", "Visual Regression"]
+                },
+                {
+                    title: "End-to-End Cypress Tests",
+                    items: ["API Mocking Support", "Test Reports", "CI/CD Integration", "Flaky Test Detection"]
+                },
+                {title: "Cross-Browser Compatibility", items: ["Chrome", "Firefox", "Safari", "Edge"]},
+                {
+                    title: "Fast & Reliable",
+                    items: ["Parallel Execution", "Headless Testing", "Docker Support", "Global Coverage"]
+                }
+            ]
+        },
+        // Add similar data for 'cloud' and 'serverless' if needed...
+    };
+
+    // Get the relevant gig data or default to 'website'
+    const gig = gigData[gigType] || gigData['website'];
+
+    let index = 0; // Initialize index for tracking which headline is displayed
+
+    // Function to dynamically update the headline and list items
+    function updateHeadlineAndList() {
+        // Get the current headline and its items
+        const currentHeadlineData = gig.headlines[index];
+
+        // Reset animation (remove and re-add the class)
+        headlineElement.classList.remove('headline'); // Clear animation
+        void headlineElement.offsetWidth; // Force reflow/repaint
+        headlineElement.classList.add('headline'); // Reapply animation
+
+        // Update headline text
+        headlineElement.textContent = currentHeadlineData.title;
+
+        // Update list items dynamically
+        listElement.innerHTML = ""; // Clear previous list items
+        currentHeadlineData.items.forEach(item => {
+            const listItem = document.createElement('li');
+            listItem.className = 'md-typescale-display-small';
+            listItem.textContent = item;
+            listElement.appendChild(listItem);
+        });
+
+        // Increment index and reset to 0 if it exceeds available items
+        index = (index + 1) % gig.headlines.length;
+    }
+    titleElement.textContent = gig.title;
+
+    // Start rotating headlines and list items every 4 seconds
+    setInterval(updateHeadlineAndList, 4000);
+
+    // Initialize the first view
+    updateHeadlineAndList();
+
+</script>
+</body>
+</html>

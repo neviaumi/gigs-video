@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+:root {
+    --md-sys-color-primary: rgb(249 250 255);
+    --md-sys-color-surface-tint: rgb(154 203 250);
+    --md-sys-color-on-primary: rgb(0 0 0);
+    --md-sys-color-primary-container: rgb(158 208 254);
+    --md-sys-color-on-primary-container: rgb(0 0 0);
+    --md-sys-color-secondary: rgb(249 250 255);
+    --md-sys-color-on-secondary: rgb(0 0 0);
+    --md-sys-color-secondary-container: rgb(189 204 222);
+    --md-sys-color-on-secondary-container: rgb(0 0 0);
+    --md-sys-color-tertiary: rgb(255 249 252);
+    --md-sys-color-on-tertiary: rgb(0 0 0);
+    --md-sys-color-tertiary-container: rgb(214 195 235);
+    --md-sys-color-on-tertiary-container: rgb(0 0 0);
+    --md-sys-color-error: rgb(255 249 249);
+    --md-sys-color-on-error: rgb(0 0 0);
+    --md-sys-color-error-container: rgb(255 186 177);
+    --md-sys-color-on-error-container: rgb(0 0 0);
+    --md-sys-color-background: rgb(16 20 24);
+    --md-sys-color-on-background: rgb(224 226 232);
+    --md-sys-color-surface: rgb(16 20 24);
+    --md-sys-color-on-surface: rgb(255 255 255);
+    --md-sys-color-surface-variant: rgb(66 71 78);
+    --md-sys-color-on-surface-variant: rgb(249 250 255);
+    --md-sys-color-outline: rgb(198 203 211);
+    --md-sys-color-outline-variant: rgb(198 203 211);
+    --md-sys-color-shadow: rgb(0 0 0);
+    --md-sys-color-scrim: rgb(0 0 0);
+    --md-sys-color-inverse-surface: rgb(224 226 232);
+    --md-sys-color-inverse-on-surface: rgb(0 0 0);
+    --md-sys-color-inverse-primary: rgb(0 44 72);
+    --md-sys-color-primary-fixed: rgb(213 233 255);
+    --md-sys-color-on-primary-fixed: rgb(0 0 0);
+    --md-sys-color-primary-fixed-dim: rgb(158 208 254);
+    --md-sys-color-on-primary-fixed-variant: rgb(0 24 42);
+    --md-sys-color-secondary-fixed: rgb(217 232 251);
+    --md-sys-color-on-secondary-fixed: rgb(0 0 0);
+    --md-sys-color-secondary-fixed-dim: rgb(189 204 222);
+    --md-sys-color-on-secondary-fixed-variant: rgb(8 24 36);
+    --md-sys-color-tertiary-fixed: rgb(241 225 255);
+    --md-sys-color-on-tertiary-fixed: rgb(0 0 0);
+    --md-sys-color-tertiary-fixed-dim: rgb(214 195 235);
+    --md-sys-color-on-tertiary-fixed-variant: rgb(29 16 46);
+    --md-sys-color-surface-dim: rgb(16 20 24);
+    --md-sys-color-surface-bright: rgb(54 57 62);
+    --md-sys-color-surface-container-lowest: rgb(11 15 18);
+    --md-sys-color-surface-container-low: rgb(24 28 32);
+    --md-sys-color-surface-container: rgb(28 32 36);
+    --md-sys-color-surface-container-high: rgb(39 42 46);
+    --md-sys-color-surface-container-highest: rgb(49 53 57);
+}
+
+* {
+    font-family: "Roboto", serif;
+    font-style: normal;
+}
+
+.md-typescale-display-small,
+.md-typescale-display-small-prominent {
+    font: var(--md-sys-typescale-display-small-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-display-small-size, 2.25rem)/var(--md-sys-typescale-display-small-line-height, 2.75rem) var(--md-sys-typescale-display-small-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-display-medium,
+.md-typescale-display-medium-prominent {
+    font: var(--md-sys-typescale-display-medium-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-display-medium-size, 2.8125rem)/var(--md-sys-typescale-display-medium-line-height, 3.25rem) var(--md-sys-typescale-display-medium-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-display-large,
+.md-typescale-display-large-prominent {
+    font: var(--md-sys-typescale-display-large-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-display-large-size, 3.5625rem)/var(--md-sys-typescale-display-large-line-height, 4rem) var(--md-sys-typescale-display-large-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-headline-small,
+.md-typescale-headline-small-prominent {
+    font: var(--md-sys-typescale-headline-small-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-headline-small-size, 1.5rem)/var(--md-sys-typescale-headline-small-line-height, 2rem) var(--md-sys-typescale-headline-small-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-headline-medium,
+.md-typescale-headline-medium-prominent {
+    font: var(--md-sys-typescale-headline-medium-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-headline-medium-size, 1.75rem)/var(--md-sys-typescale-headline-medium-line-height, 2.25rem) var(--md-sys-typescale-headline-medium-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-headline-large,
+.md-typescale-headline-large-prominent {
+    font: var(--md-sys-typescale-headline-large-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-headline-large-size, 2rem)/var(--md-sys-typescale-headline-large-line-height, 2.5rem) var(--md-sys-typescale-headline-large-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-title-small,
+.md-typescale-title-small-prominent {
+    font: var(--md-sys-typescale-title-small-weight, var(--md-ref-typeface-weight-medium, 500)) var(--md-sys-typescale-title-small-size, 0.875rem)/var(--md-sys-typescale-title-small-line-height, 1.25rem) var(--md-sys-typescale-title-small-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-title-medium,
+.md-typescale-title-medium-prominent {
+    font: var(--md-sys-typescale-title-medium-weight, var(--md-ref-typeface-weight-medium, 500)) var(--md-sys-typescale-title-medium-size, 1rem)/var(--md-sys-typescale-title-medium-line-height, 1.5rem) var(--md-sys-typescale-title-medium-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-title-large,
+.md-typescale-title-large-prominent {
+    font: var(--md-sys-typescale-title-large-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-title-large-size, 1.375rem)/var(--md-sys-typescale-title-large-line-height, 1.75rem) var(--md-sys-typescale-title-large-font, var(--md-ref-typeface-brand, Roboto))
+}
+
+.md-typescale-body-small,
+.md-typescale-body-small-prominent {
+    font: var(--md-sys-typescale-body-small-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-body-small-size, 0.75rem)/var(--md-sys-typescale-body-small-line-height, 1rem) var(--md-sys-typescale-body-small-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-body-medium,
+.md-typescale-body-medium-prominent {
+    font: var(--md-sys-typescale-body-medium-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-body-medium-size, 0.875rem)/var(--md-sys-typescale-body-medium-line-height, 1.25rem) var(--md-sys-typescale-body-medium-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-body-large,
+.md-typescale-body-large-prominent {
+    font: var(--md-sys-typescale-body-large-weight, var(--md-ref-typeface-weight-regular, 400)) var(--md-sys-typescale-body-large-size, 1rem)/var(--md-sys-typescale-body-large-line-height, 1.5rem) var(--md-sys-typescale-body-large-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-label-small,
+.md-typescale-label-small-prominent {
+    font: var(--md-sys-typescale-label-small-weight, var(--md-ref-typeface-weight-medium, 500)) var(--md-sys-typescale-label-small-size, 0.6875rem)/var(--md-sys-typescale-label-small-line-height, 1rem) var(--md-sys-typescale-label-small-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-label-medium,
+.md-typescale-label-medium-prominent {
+    font: var(--md-sys-typescale-label-medium-weight, var(--md-ref-typeface-weight-medium, 500)) var(--md-sys-typescale-label-medium-size, 0.75rem)/var(--md-sys-typescale-label-medium-line-height, 1rem) var(--md-sys-typescale-label-medium-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-label-medium-prominent {
+    font-weight: var(--md-sys-typescale-label-medium-weight-prominent, var(--md-ref-typeface-weight-bold, 700))
+}
+
+.md-typescale-label-large,
+.md-typescale-label-large-prominent {
+    font: var(--md-sys-typescale-label-large-weight, var(--md-ref-typeface-weight-medium, 500)) var(--md-sys-typescale-label-large-size, 0.875rem)/var(--md-sys-typescale-label-large-line-height, 1.25rem) var(--md-sys-typescale-label-large-font, var(--md-ref-typeface-plain, Roboto))
+}
+
+.md-typescale-label-large-prominent {
+    font-weight: var(--md-sys-typescale-label-large-weight-prominent, var(--md-ref-typeface-weight-bold, 700))
+}
